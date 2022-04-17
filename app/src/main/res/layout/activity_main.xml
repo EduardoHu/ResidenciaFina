@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="CAPUB"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tipoposte"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="🗼 Tipo de poste"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:layout_width="368dp"
+        android:layout_height="102dp"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="✅ Funciona" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="❎ No Funciona" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/idposte"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="🔎 Ingrese ID"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="🗒️Reporte" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listpostes"
+        android:layout_width="match_parent"
+        android:layout_height="399dp" />
+
+
+</LinearLayout>
